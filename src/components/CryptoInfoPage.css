@@ -1,0 +1,15 @@
+.crypto-info-page {
+  background-color: #ececec;
+  color: #142d4c;
+  text-align: center;
+  padding: 20px;
+}
+
+.crypto-info-page h2 {
+  color: #385170;
+}
+
+.crypto-info-page p {
+  font-size: 18px;
+  margin: 10px 0;
+}

@@ -1,0 +1,126 @@
+/* Globalne resetowanie */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Kontener wykresu */
+  .chart-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #ffffff; /* Białe tło */
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+    color: #4b4f58; /* Kolor tekstu */
+  }
+  
+  /* Tytuł wykresu */
+  .chart-title {
+    font-size: 30px;
+    color: #385170; /* Kolor tytułu wykresu */
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Wykres */
+  .chart {
+    width: 100%;
+    height: 450px;
+    max-height: 500px;
+    background-color: #f7f7f7; /* Tło wykresu */
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Przycisk "Cofnij" */
+  .go-back-button {
+    background-color: #9fd3c7; /* Zielony */
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .go-back-button:hover {
+    background-color: #385170; /* Zmiana koloru na granatowy przy hover */
+    transform: translateY(-2px);
+  }
+  
+  .go-back-button:active {
+    background-color: #142d4c; /* Jeszcze ciemniejszy granat przy kliknięciu */
+    transform: translateY(2px);
+  }
+  
+  /* Styl dla przycisków zmieniających zakres wykresu */
+  .control-button {
+    background-color: #385170; /* Granatowy */
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .control-button:hover {
+    background-color: #142d4c; /* Ciemniejszy granat na hover */
+    transform: translateY(-2px);
+  }
+  
+  .control-button:active {
+    background-color: #0c1e2b; /* Bardziej intensywny granat przy kliknięciu */
+    transform: translateY(2px);
+  }
+  
+  /* Sekcja dla przycisków zmieniających zakres wykresu */
+  .chart-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+  }
+  
+  /* Animacja przycisków w trybie mobilnym */
+  @media (max-width: 768px) {
+    .chart-container {
+      padding: 15px;
+      width: 90%;
+      max-width: 100%;
+    }
+  
+    .chart-title {
+      font-size: 24px;
+    }
+  
+    .chart {
+      height: 300px;
+    }
+  
+    .go-back-button {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  
+    .control-button {
+      font-size: 12px;
+      padding: 6px 14px;
+    }
+  }
+  
